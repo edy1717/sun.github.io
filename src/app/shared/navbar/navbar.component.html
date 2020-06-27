@@ -1,0 +1,15 @@
+<mat-toolbar color="primary" class="mat-elevation-z6">
+    <span>SUN</span>
+
+    <span class="spacer"></span>
+    <a mat-button routerLinkActive="active" routerLink="user/register">DARME DE ALTA</a>
+    <a mat-button routerLinkActive="active" routerLink="user/login">ENTRAR</a>
+    <!-- <a mat-raised-button color="accent" routerLinkActive="active">Cerrar Sesión</a> -->
+    <a mat-button routerLinkActive="active" routerLink="esp">Cómo funciona</a>
+    <button mat-button [matMenuTriggerFor]="menu">Invierte tu dinero</button>
+    <mat-menu #menu="matMenu">
+        <button mat-menu-item routerLink="investment/member">¿Quiero ser socio?</button> 
+        <button mat-menu-item routerLink="investment/transfer">Adquirir Negocio</button>
+        <button mat-menu-item routerLink="investment/sale">Comprar equipamiento</button> 
+    </mat-menu>
+</mat-toolbar>
